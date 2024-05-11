@@ -1,0 +1,452 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* navbar styling */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar__logo img{
+    width: 200px;
+}
+
+.navbar__list ul{
+    display: flex;
+    gap: 25px;
+}
+.navbar__list li {
+    list-style: none;
+    
+}
+
+/* .navbar__list ul li a:hover{
+    background-color: aliceblue;
+    border-radius: 30px;
+    border: none;
+    
+} */
+
+
+
+.navbar__list li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#trip:hover{
+    border-bottom: black 1px solid;
+    
+}
+
+.navbar__currency{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.navbar__currency p{
+    font-weight: 600;
+}
+
+.navbar__currency button{
+    background-color: black;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    
+    border-radius: 30px;
+}
+
+/* heading styling */
+
+.heading h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/* categories section */
+
+.categories{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.categories p{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.categories p:hover{
+    border-bottom: 2px solid black;
+    
+}
+
+.para{
+    border-bottom: 2px solid black;
+    font-weight: 800;
+}
+
+/* Searchbar and button */
+
+.Search__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar{
+    display: flex;
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    width: 40%;
+    border-radius: 30px;
+    justify-content: flex-start
+
+}
+
+.searchbar p{
+    color: lightslategray;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 30px;
+    padding: 23px;
+    background-color: rgb(52, 224, 161);
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+/* MAIN IMAGE SECTION */
+
+.image__container{
+    text-align: center;
+    padding: 40px 8%;
+    position: relative;
+}
+
+.image__container .image__container__one{
+    width: 100%;
+    background: linear-gradient(90deg , #D4DEF7,#dcc9ff);
+    position: relative;
+    border-radius: 10px;
+}
+
+.image__container .image__container__one .image__container__one__image{
+    width: 100%;
+}
+
+.image__container .image__container__one .image__container__one__image img{
+    width: 100%;
+}
+
+.image__container .image__container__content p{
+    font-family: 'Trip Sans';
+    font-size: 12px;
+
+}
+
+.image__container .image__container__content p span{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Trip Sans';
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0px 5px;
+}
+
+.image__container .image__container__content h2{
+    font-family: 'Trip Sans';
+    font-weight: bold;
+    font-size: 55px;
+    color: rgb(48, 29,73);
+    line-height: 55px;
+    margin-top: 10px;
+}
+
+.image__container .image__container__content h3{
+    font-family: 'Trip Sans';
+    font-weight: 500;
+    font-size: 22px;
+    color: rgb(48, 29,73);
+    margin: 10px 0px;
+}
+
+.image__container .image__container__content a{
+    font-family: 'Trip Sans';
+    font-weight: 500;
+    padding: 12px 25px;
+    border-radius: 200px;
+    background-color: rgb(48, 29,73);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: max-content;
+}
+
+.image__container .image__container__content a:hover{
+    background-color: #52327C;
+}
+
+.image__container .image__container__content a i{
+    padding: 0px 5px 0px 0px;
+}
+
+.image__container .image__container__content{
+    position: absolute;
+    text-align: left;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 15%;
+}
+
+.caption__container .caption__img img{
+    width: 150px;
+    margin-left: 100px;
+    border-radius: 20px;
+    transform: perspective(800px) rotateZ(15deg);
+    position: relative;
+}
+.caption{
+    background-color: lightcyan;
+    position: absolute;
+    top: 135%;
+    left: 20%;
+    padding: 20px;
+    right: 29px;
+}
+
+.caption p{
+    margin-top: 10px;
+}
+
+.caption button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    
+}
+
+.caption button:hover{
+    background-color: rgb(48, 29,73);
+    color: white;
+}
+
+.hotels__name{
+    padding:40px 8%;
+    position: relative;
+    margin-top: 20px;
+}
+.hotels__name h2{
+    font-family: 'Trip Sans';
+    font-weight: 500 ;
+    font-size: 30px;
+    color:black;
+}
+.hotels__name p{
+    font-family: 'Trip Sans';
+    font-weight: 400 ;
+    font-size: 18px;
+    color:black;
+}
+.hotels__name h3{
+    font-family: 'Trip Sans';
+    font-weight: bold ;
+    font-size: 32px;
+    color:white;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+.hotels__name .hotels__card{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.hotels__name .hotel__card__img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.hotels__name .hotel__card__img:hover .box{
+    display: block;
+}
+.hotels__name .hotel__card__img img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.hotels__name .hotel__card__img .box{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.39);
+    position: absolute;
+    top: 0px;
+    border-radius: 10px;
+    display: none;
+    transform: 2s;
+}
+.hotels__name .hotel__card__img .box__content{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(20deg,rgba(0, 0, 0, 0.781),rgba(255, 255, 255, 0));
+    position: absolute;
+    top: 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    padding-left: 8%;
+    padding-bottom: 8%;
+}
+
+.footer{
+    margin-top: 40px;
+    padding:50px 8%;
+    background-color: #FAF1ED;
+}
+.footer .footer__one{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer__oneone{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.footer .footer__oneone__one{
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer__oneone__two{
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer__oneone__three{
+    display: flex;
+    flex-direction: column;
+}
+.footer h3{
+    font-family: 'Trip Sans';
+    font-weight: 500 ;
+    font-size:16px;
+    color:black;
+}
+.footer a{
+    font-family: 'Trip Sans';
+    font-weight: 400 ;
+    font-size:14px;
+    color:black;
+    text-decoration: none;
+    padding: 2px 0px;
+}
+.footer .footer__two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.footer .footer__two img{
+    width: 40px;
+}
+.footer .footer__twoone__one{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer h4{
+    font-family: 'Trip Sans';
+    font-weight: 500 ;
+    font-size:12px;
+    color:black;
+}
+.footer ul{
+   gap: 20px;
+}
+.footer ul a{
+    font-family: 'Trip Sans';
+    font-weight: 500 ;
+    font-size:16px;
+    color:black;
+    text-decoration: underline;
+    padding-right: 20px;
+}
+.footer select{
+    background-color:white;
+    border: solid 2px rgba(128, 128, 128, 0.555);
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    padding: 0px 5px;
+    font-family: 'Trip Sans';
+    font-weight: 500 ;
+    font-size:16px;
+    outline: none;
+    margin-right: 10px;
+}
+.footer .footer__three{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.footer p{
+    font-family: 'Trip Sans';
+    font-weight: 500 ;
+    font-size:12px;
+    color:rgba(0, 0, 0, 0.692);
+}
+.footer .footer__three i{
+    font-size: 20px;
+    margin: 10px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width:800px) {
+    *{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    *{
+        font-size: 7px;
+    }
+
+   
+}
